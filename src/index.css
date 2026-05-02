@@ -2,95 +2,100 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Summit — premium minimal habit tracker design system.
+   Black, white, warm grays only. All colors HSL. */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Canvas */
+    --background: 36 20% 97%;            /* warm off-white page */
+    --foreground: 0 0% 6%;               /* near black ink */
 
+    /* Phone surface */
+    --surface: 0 0% 100%;                /* pure white phone bg */
+    --surface-foreground: 0 0% 6%;
+
+    /* Cards */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 0 0% 6%;
+    --card-muted: 36 16% 96%;            /* warm gray card */
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 0 0% 6%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Ink scale — warm grays */
+    --primary: 0 0% 6%;                  /* near-black */
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 36 14% 94%;
+    --secondary-foreground: 0 0% 12%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 36 12% 92%;
+    --muted-foreground: 30 6% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 36 14% 94%;
+    --accent-foreground: 0 0% 12%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 70% 45%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 30 10% 88%;
+    --input: 30 10% 88%;
+    --ring: 0 0% 12%;
 
-    --radius: 0.5rem;
+    /* Brand mountain ink */
+    --ink: 0 0% 6%;
+    --ink-soft: 30 8% 35%;
+    --ink-faint: 30 6% 65%;
+    --hairline: 30 10% 90%;
 
+    /* Celebration golds (kept extremely restrained, used only for confetti) */
+    --gold: 41 65% 58%;
+    --gold-soft: 41 55% 78%;
+
+    --radius: 1.25rem;
+
+    /* Phone frame */
+    --phone-bezel: 0 0% 8%;
+
+    /* Sidebar (unused but preserved) */
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --background: 0 0% 4%;
+    --foreground: 0 0% 98%;
+    --surface: 0 0% 6%;
+    --surface-foreground: 0 0% 98%;
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 98%;
+    --card-muted: 0 0% 10%;
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 6%;
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14%;
+    --muted-foreground: 0 0% 65%;
+    --accent: 0 0% 14%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62% 40%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 16%;
+    --input: 0 0% 16%;
+    --ring: 0 0% 80%;
+    --ink: 0 0% 98%;
+    --ink-soft: 0 0% 70%;
+    --ink-faint: 0 0% 40%;
+    --hairline: 0 0% 16%;
   }
 }
 
@@ -99,7 +104,180 @@ All colors MUST be HSL.
     @apply border-border;
   }
 
+  html, body, #root {
+    @apply h-full;
+  }
+
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    font-feature-settings: "ss01", "cv11";
+    -webkit-font-smoothing: antialiased;
   }
 }
+
+@layer components {
+  /* iPhone frame */
+  .iphone-frame {
+    width: 375px;
+    height: 812px;
+    border-radius: 54px;
+    background: hsl(var(--phone-bezel));
+    padding: 12px;
+    box-shadow:
+      0 1px 0 hsl(0 0% 100% / 0.04) inset,
+      0 0 0 1.5px hsl(0 0% 0% / 0.6),
+      0 30px 80px -20px hsl(0 0% 0% / 0.35),
+      0 10px 30px -10px hsl(0 0% 0% / 0.25);
+    position: relative;
+  }
+  .iphone-screen {
+    @apply relative w-full h-full overflow-hidden;
+    border-radius: 44px;
+    background: hsl(var(--surface));
+  }
+  .iphone-notch {
+    position: absolute;
+    top: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 118px;
+    height: 32px;
+    background: hsl(0 0% 0%);
+    border-radius: 999px;
+    z-index: 50;
+  }
+
+  /* Soft hairline divider */
+  .hairline {
+    background: hsl(var(--hairline));
+  }
+
+  /* Tap-to-log button */
+  .tap-ring {
+    @apply relative flex items-center justify-center rounded-full transition-all duration-300 ease-out;
+    width: 44px;
+    height: 44px;
+    border: 1.5px solid hsl(var(--ink) / 0.25);
+    background: transparent;
+  }
+  .tap-ring:hover { border-color: hsl(var(--ink) / 0.55); }
+  .tap-ring[data-on="true"] {
+    background: hsl(var(--ink));
+    border-color: hsl(var(--ink));
+    transform: scale(1.04);
+  }
+  .tap-ring[data-on="true"] .tap-check { opacity: 1; transform: scale(1); }
+  .tap-check {
+    color: hsl(var(--primary-foreground));
+    opacity: 0;
+    transform: scale(0.6);
+    transition: all 250ms cubic-bezier(.2,.9,.3,1.4);
+  }
+
+  /* Glowing current-day dot */
+  .glow-dot {
+    box-shadow:
+      0 0 0 4px hsl(var(--ink) / 0.08),
+      0 0 0 10px hsl(var(--ink) / 0.04);
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+
+  /* Pill button */
+  .btn-pill {
+    @apply inline-flex items-center justify-center rounded-full font-medium transition-all duration-200;
+    letter-spacing: -0.01em;
+  }
+  .btn-pill-dark {
+    @apply btn-pill bg-foreground text-background;
+    height: 56px;
+    padding: 0 28px;
+  }
+  .btn-pill-dark:hover { transform: translateY(-1px); }
+  .btn-pill-light {
+    @apply btn-pill bg-background text-foreground;
+    height: 56px;
+    padding: 0 28px;
+  }
+  .btn-pill-ghost {
+    @apply btn-pill text-foreground;
+    background: transparent;
+    height: 48px;
+    padding: 0 20px;
+  }
+  .btn-pill-ghost:hover { background: hsl(var(--muted)); }
+
+  /* Screen scroll padding for iOS feel */
+  .screen-scroll {
+    @apply h-full overflow-y-auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .screen-scroll::-webkit-scrollbar { display: none; }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Poppins', system-ui, sans-serif;
+    letter-spacing: -0.03em;
+  }
+  .text-balance { text-wrap: balance; }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow:
+      0 0 0 4px hsl(var(--ink) / 0.08),
+      0 0 0 10px hsl(var(--ink) / 0.04);
+  }
+  50% {
+    box-shadow:
+      0 0 0 6px hsl(var(--ink) / 0.14),
+      0 0 0 14px hsl(var(--ink) / 0.06);
+  }
+}
+
+@keyframes pulse-glow-light {
+  0%, 100% {
+    box-shadow:
+      0 0 0 4px hsl(0 0% 100% / 0.12),
+      0 0 0 10px hsl(0 0% 100% / 0.05);
+  }
+  50% {
+    box-shadow:
+      0 0 0 7px hsl(0 0% 100% / 0.20),
+      0 0 0 16px hsl(0 0% 100% / 0.08);
+  }
+}
+.glow-dot-light {
+  animation: pulse-glow-light 2s ease-in-out infinite;
+}
+
+@keyframes confetti-fall {
+  0% { transform: translate3d(0,-20px,0) rotate(0deg); opacity: 0; }
+  10% { opacity: 1; }
+  100% { transform: translate3d(var(--tx, 0), 820px, 0) rotate(var(--rot, 720deg)); opacity: 0.9; }
+}
+
+@keyframes float-y {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+
+@keyframes sheet-up {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+.animate-sheet-up { animation: sheet-up 360ms cubic-bezier(.2,.8,.2,1); }
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-up { animation: fade-up 500ms cubic-bezier(.2,.8,.2,1) both; }
+
+@keyframes screen-in {
+  from { opacity: 0; transform: translateY(12px) scale(0.995); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+.animate-screen-in { animation: screen-in 380ms cubic-bezier(.2,.8,.2,1) both; }
