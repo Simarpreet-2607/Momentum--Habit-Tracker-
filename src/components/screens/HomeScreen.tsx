@@ -90,7 +90,7 @@ export function HomeScreen() {
       {/* Social proof banner */}
       <div className="mx-5 mt-4 mb-10 rounded-3xl bg-foreground text-background px-5 py-4">
         <p className="font-display text-[15px] leading-snug font-medium text-balance">
-          Most people quit at Day 5.
+          We’re so proud of you!
         </p>
         <p className="text-[13px] text-background/65 mt-1">
           You’re ahead of 70% of users.
