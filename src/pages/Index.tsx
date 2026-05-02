@@ -25,10 +25,7 @@ const Index = () => {
         {/* Header */}
         <header className="mb-10 flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between">
           <div>
-            <p className="text-[11px] uppercase tracking-[0.22em] text-ink-faint font-medium">
-              Summit · iOS concept
-            </p>
-            <h1 className="font-display mt-2 text-3xl lg:text-4xl font-bold tracking-tight text-ink text-balance">
+            <h1 className="font-display text-3xl lg:text-4xl font-bold tracking-tight text-ink text-balance">
               A minimal habit tracker, one mountain at a time.
             </h1>
             <p className="mt-2 text-sm text-ink-soft max-w-xl">
@@ -84,10 +81,6 @@ const Index = () => {
           </div>
         </div>
 
-        <footer className="mt-12 flex items-center justify-between text-[11px] text-ink-faint">
-          <p>Designed for 375 × 812 — iPhone class</p>
-          <p>Poppins · HSL design tokens · No gradients</p>
-        </footer>
       </div>
     </main>
   );
