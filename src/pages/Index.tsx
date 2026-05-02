@@ -23,16 +23,6 @@ const Index = () => {
     <main className="min-h-screen w-full bg-background">
       <div className="mx-auto max-w-6xl px-6 py-10 lg:py-14">
         {/* Header */}
-        <header className="mb-10 flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between">
-          <div>
-            <h1 className="font-display text-3xl lg:text-4xl font-bold tracking-tight text-ink text-balance">
-              A minimal habit tracker, one mountain at a time.
-            </h1>
-            <p className="mt-2 text-sm text-ink-soft max-w-xl">
-              Five screens & lock-screen notifications. Black, white, warm gray. Tap a chip to switch.
-            </p>
-          </div>
-        </header>
 
         <div className="grid gap-10 lg:grid-cols-[260px_1fr] lg:items-start">
           {/* Screen switcher */}
