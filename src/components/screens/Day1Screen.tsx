@@ -1,4 +1,4 @@
-import { MountainPath } from "./MountainPath";
+import { TrailPath } from "./TrailPath";
 
 export function Day1Screen() {
   return (
@@ -25,8 +25,8 @@ export function Day1Screen() {
             Just 2 more days to a 3-day streak.
           </p>
 
-          <div className="mt-12 w-full max-w-[280px] animate-fade-up" style={{ animationDelay: "200ms" }}>
-            <MountainPath currentDay={1} variant="dark" />
+          <div className="mt-8 w-full max-w-[300px] animate-fade-up" style={{ animationDelay: "200ms" }}>
+            <TrailPath currentDay={1} />
           </div>
         </div>
 

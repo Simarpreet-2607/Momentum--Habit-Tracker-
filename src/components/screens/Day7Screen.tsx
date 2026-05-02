@@ -28,7 +28,6 @@ export function Day7Screen() {
               { g: "💧", l: "Water" },
               { g: "📚", l: "Study" },
               { g: "🥗", l: "Eat Clean" },
-              { g: "🧘", l: "Mindful" },
             ].map((c) => (
               <span key={c.l} className="inline-flex items-center gap-1.5 rounded-full bg-background/10 border border-background/15 px-3 py-1.5 text-[12px]">
                 <span aria-hidden>{c.g}</span>
